@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма введення даних</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Реєстрація на курс</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Про курс</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="form-container">
+            <img src="images/form-image.jpg" alt="Форма реєстрації" class="form-image">
+            <form action="#" method="post">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="course">Оберіть курс:</label>
+                <select id="course" name="course">
+                    <option value="math">Математика</option>
+                    <option value="physics">Фізика</option>
+                    <option value="history">Історія</option>
+                </select>
+
+                <label>Формат навчання:</label>
+                <input type="radio" id="online" name="format" value="online">
+                <label for="online">Онлайн</label>
+                <input type="radio" id="offline" name="format" value="offline">
+                <label for="offline">Офлайн</label>
+
+                <button type="submit">Зареєструватися</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Курси підготовки до ЗНО</p>
+    </footer>
+</body>
+</html>
